@@ -40,7 +40,7 @@ router.get('/drones/:id/edit', (req, res, next) => {
   // Iteration #4: Update the drone
   // ... your code here
   Drones.findById(req.params.id)
-  .then((oneDrone)=>{
+  .then((oneDrone)=>{ 
     res.render("drones/update-form.hbs", {
       drone : oneDrone})
   })
